@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word GPT Plus - L'IA dans votre traitement de texte</title>
+    <meta name="description" content="Word GPT Plus est un add-in qui intègre l'IA directement dans Microsoft Word pour améliorer votre rédaction.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/assets/css/main.css">
+    <link rel="stylesheet" href="src/assets/css/header.css">
+    <link rel="stylesheet" href="src/assets/css/features.css">
+    <link rel="stylesheet" href="src/assets/css/installation.css">
+    <link rel="stylesheet" href="src/assets/css/faq.css">
+    <link rel="stylesheet" href="src/assets/css/footer.css">
+    <link rel="stylesheet" href="src/assets/css/notifications.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <h1>Word GPT Plus</h1>
+            <p>L'intelligence artificielle au service de votre rédaction dans Microsoft Word</p>
+            <div class="header-buttons">
+                <a href="#download" class="btn">Télécharger maintenant</a>
+                <a href="#features" class="btn btn-secondary">Découvrir les fonctionnalités</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Présentation de l'add-in -->
+    <section id="presentation" class="section">
+        <div class="container">
+            <h2>Améliorez votre productivité avec l'IA dans Word</h2>
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div>
+                    <p>Word GPT Plus est un module complémentaire pour Microsoft Word qui intègre la puissance de l'IA directement dans votre traitement de texte.</p>
+                    <p>Il vous permet de générer du texte, améliorer votre style, traduire du contenu, résumer des documents et bien plus, directement depuis l'interface de Word.</p>
+                    <p>Compatible avec plusieurs API d'IA gratuites (Gemini, Together, OpenRouter) pour vous donner le choix de l'IA qui vous convient le mieux.</p>
+                    <p>Interface entièrement en français et intuitive, conçue pour s'intégrer parfaitement dans votre flux de travail.</p>
+                </div>
+                <div class="image-container">
+                    <img src="src/assets/images/preview.png" alt="Interface de Word GPT Plus" class="preview-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Téléchargement -->
+    <section id="download" class="section" style="background-color: var(--secondary-color);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2>Commencez en quelques clics</h2>
+                <p>Téléchargez le fichier manifest.xml qui permettra d'installer l'add-in dans Word :</p>
+                <div style="margin: 30px 0;">
+                    <a href="manifest.zip" download class="btn">Télécharger manifest.xml</a>
+                </div>
+                <p><small>Ce fichier est configuré pour se connecter à l'add-in hébergé à l'adresse : https://ia-in-word.vercel.app</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <h2>Fonctionnalités principales</h2>
+            <p>Word GPT Plus offre une variété d'outils pour améliorer votre rédaction :</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3 class="feature-title">Génération de texte</h3>
+                    <p class="feature-description">Créez du contenu original basé sur vos instructions et le contexte de votre document.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="feature-title">Traduction</h3>
+                    <p class="feature-description">Traduisez vos textes en plus de 40 langues différentes sans quitter Word.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Résumé</h3>
+                    <p class="feature-description">Obtenez un résumé concis de votre texte sélectionné pour gagner du temps.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Amélioration du style</h3>
+                    <p class="feature-description">Perfectionnez la clarté et la qualité de vos écrits avec des suggestions d'amélioration.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spell-check"></i>
+                    </div>
+                    <h3 class="feature-title">Correction grammaticale</h3>
+                    <p class="feature-description">Identifiez et corrigez les erreurs grammaticales pour des textes impeccables.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">Rédaction académique</h3>
+                    <p class="feature-description">Transformez votre texte en style académique professionnel pour vos travaux universitaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide d'installation -->
+    <section id="installation" class="section installation-section">
+        <div class="container">
+            <div class="installation-header">
+                <h2>Guide d'installation</h2>
+                <p>Suivez ces étapes simples pour installer Word GPT Plus dans votre Microsoft Word</p>
+            </div>
+            
+            <!-- Swiper pour les étapes d'installation -->
+            <div class="swiper installation-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Ouvrir Word</h3>
+                        <p class="step-description">Lancez Microsoft Word et ouvrez un document</p>
+                        <div class="step-image">
+                            <img src="src/assets/images/step1.png" alt="Ouvrir Microsoft Word">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Accéder aux add-ins</h3>
+                        <p class="step-description">Cliquez sur l'onglet "Insertion" dans le ruban, puis cliquez sur "Add-ins" ou "Mes add-ins"</p>
+                        <div class="step-image">
+                            <img src="src/assets/images/step2.png" alt="Accéder aux add-ins">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Ajouter le manifest</h3>
+                        <p class="step-description">Cliquez sur "Mes add-ins", puis "Charger un add-in personnalisé" et sélectionnez le manifest.xml téléchargé</p>
+                        <div class="step-image">
+                            <img src="src/assets/images/step3.png" alt="Ajouter le manifest">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Vérifier l'installation</h3>
+                        <p class="step-description">L'add-in Word GPT Plus devrait apparaître dans le ruban de Word. Cliquez sur son icône pour l'ouvrir</p>
+                        <div class="step-image">
+                            <img src="src/assets/images/step4.png" alt="Vérifier l'installation">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div class="installation-note">
+                <p><strong>Note :</strong> Vous aurez besoin de configurer au moins une clé API dans les paramètres de l'add-in après l'installation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide d'utilisation -->
+    <section id="usage" class="section">
+        <div class="container">
+            <h2>Guide d'utilisation</h2>
+            
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+                <div>
+                    <h3>Interface principale</h3>
+                    <h4>Champ "Personnage"</h4>
+                    <p>C'est le ton ou le style que l'IA va adopter (professeur, rédacteur créatif, etc.)</p>
+                    <p>Vous pouvez sélectionner un personnage prédéfini ou créer les vôtres</p>
+                    
+                    <h4>Champ "Instruction"</h4>
+                    <p>C'est la consigne précise que vous donnez à l'IA</p>
+                    <p>Exemples : "Rédige une introduction sur...", "Explique ce concept..."</p>
+                    
+                    <h4>Langue de réponse</h4>
+                    <p>Sélectionnez la langue dans laquelle l'IA doit vous répondre</p>
+                </div>
+                
+                <div>
+                    <h3>Boutons d'action</h3>
+                    <ul>
+                        <li><strong>Traduire :</strong> traduit le texte sélectionné dans la langue choisie</li>
+                        <li><strong>Résumer :</strong> crée un résumé concis du texte sélectionné</li>
+                        <li><strong>Améliorer :</strong> améliore la clarté et le style du texte</li>
+                        <li><strong>Grammaire :</strong> corrige les erreurs grammaticales</li>
+                        <li><strong>Académique :</strong> transforme le texte en style académique</li>
+                        <li><strong>Paramètres :</strong> accède aux paramètres de l'add-in</li>
+                    </ul>
+                    
+                    <h3>Configuration API</h3>
+                    <p>Pour utiliser l'add-in, configurez au moins une API :</p>
+                    <ol>
+                        <li>Cliquez sur le bouton "Paramètres"</li>
+                        <li>Sélectionnez l'API souhaitée (Gemini, Together, OpenRouter)</li>
+                        <li>Entrez votre clé API et sélectionnez le modèle</li>
+                        <li>Cliquez sur "Confirmer" pour sauvegarder</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Questions fréquentes</h2>
+                <p>Trouvez rapidement des réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">L'add-in est-il gratuit ?</div>
+                    <div class="faq-answer">
+                        <p>L'add-in lui-même est gratuit, mais vous devez avoir vos propres clés API pour les services d'IA (Gemini, Together, OpenRouter).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Où puis-je obtenir une clé API ?</div>
+                    <div class="faq-answer">
+                        <p>Vous pouvez obtenir une clé API Gemini gratuitement sur le site de Google AI, une clé Together sur together.ai ou une clé OpenRouter sur openrouter.ai.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Mes données sont-elles sécurisées ?</div>
+                    <div class="faq-answer">
+                        <p>Vos textes sont envoyés directement aux API d'IA que vous avez configurées. Vos clés API sont stockées localement dans votre navigateur et ne sont jamais partagées.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je utiliser l'add-in hors ligne ?</div>
+                    <div class="faq-answer">
+                        <p>Non, une connexion internet est nécessaire car l'add-in se connecte à des API en ligne.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Quelle API est recommandée pour commencer ?</div>
+                    <div class="faq-answer">
+                        <p>L'API Gemini de Google est recommandée pour débuter car elle offre une généreuse utilisation gratuite.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Comment changer la langue de l'interface ?</div>
+                    <div class="faq-answer">
+                        <p>L'interface est en français par défaut. Vous pouvez changer la langue dans les paramètres en cliquant sur "Paramètres" puis en modifiant "Langue de l'interface".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Word GPT Plus</h3>
+                    <p>L'intelligence artificielle au service de votre rédaction dans Microsoft Word.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#presentation">Présentation</a></li>
+                        <li><a href="#download">Téléchargement</a></li>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#usage">Guide d'utilisation</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://github.com/Kuingsmile/word-GPT-Plus" target="_blank">GitHub</a></li>
+                        <li><a href="mailto:contact@example.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Word GPT Plus est un projet open source basé sur <a href="https://github.com/Kuingsmile/word-GPT-Plus" target="_blank">word-GPT-Plus</a>.</p>
+                <p>&copy; <span class="current-year">2023</span> Word GPT Plus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/assets/js/main.js"></script>
+</body>
+</html>
