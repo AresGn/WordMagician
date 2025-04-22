@@ -1,6 +1,6 @@
-# Word GPT Plus - Site Web
+# WordMagician - Site Web
 
-Ce dépôt contient le code source du site web de présentation de Word GPT Plus, un add-in Microsoft Word qui intègre l'IA dans votre traitement de texte.
+Ce dépôt contient le code source du site web de présentation de WordMagician, un add-in Microsoft Word qui intègre l'IA dans votre traitement de texte.
 
 ## Structure du projet
 
@@ -40,7 +40,7 @@ Ce dépôt contient le code source du site web de présentation de Word GPT Plus
 
 ## Fonctionnalités du site
 
-1. Présentation de l'add-in Word GPT Plus
+1. Présentation de l'add-in WordMagician
 2. Téléchargement du fichier manifest.xml
 3. Guide d'installation avec diapositives
 4. Description des fonctionnalités principales
