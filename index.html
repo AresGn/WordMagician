@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WordMagician - L'IA dans votre traitement de texte</title>
     <meta name="description" content="WordMagician est un add-in qui intègre l'IA directement dans Microsoft Word pour améliorer votre rédaction.">
     
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="src/assets/css/footer.css">
     <link rel="stylesheet" href="src/assets/css/notifications.css">
     <link rel="stylesheet" href="src/assets/css/demo.css">
+    <link rel="stylesheet" href="src/assets/css/usage.css">
     
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
@@ -43,7 +44,7 @@
     <section id="presentation" class="section">
         <div class="container">
             <h2>Améliorez votre productivité avec l'IA dans Word</h2>
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+            <div class="grid presentation-grid">
                 <div>
                     <p>WordMagician est un module complémentaire pour Microsoft Word qui intègre la puissance de l'IA directement dans votre traitement de texte.</p>
                     <p>Il vous permet de générer du texte, améliorer votre style, traduire du contenu, résumer des documents et bien plus, directement depuis l'interface de Word.</p>
@@ -60,10 +61,10 @@
     <!-- Téléchargement -->
     <section id="download" class="section" style="background-color: var(--secondary-color);">
         <div class="container">
-            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <div class="download-container">
                 <h2>Commencez en quelques clics</h2>
                 <p>Téléchargez le fichier manifest.xml qui permettra d'installer l'add-in dans Word :</p>
-                <div style="margin: 30px 0;">
+                <div class="download-button">
                     <a href="manifest.zip" download class="btn">Télécharger manifest.xml</a>
                 </div>
                 <p><small>Ce fichier est configuré pour se connecter à l'add-in hébergé à l'adresse : https://ia-in-word.vercel.app</small></p>
@@ -143,7 +144,7 @@
                     <div class="swiper-slide">
                         <div class="step-number">1</div>
                         <h3 class="step-title">Télécharger et extraire le ZIP</h3>
-                        <p class="step-description">Téléchargez le fichier manifest.zip et extrayez son contenu dans un dossier temporaire</p>
+                        <p class="step-description">Téléchargez le fichier manifest.zip et extrayez son contenu dans un dossier sur votre disque local C</p>
                         <div class="step-image">
                             <img src="src/assets/images/step1.png" alt="Télécharger et extraire le ZIP">
                         </div>
@@ -151,114 +152,102 @@
                     
                     <div class="swiper-slide">
                         <div class="step-number">2</div>
-                        <h3 class="step-title">Créer un dossier sur le Disque C</h3>
-                        <p class="step-description">Créez un nouveau dossier dans votre Disque Local C pour y placer les fichiers de l'add-in</p>
+                        <h3 class="step-title">Accéder aux propriétés du dossier</h3>
+                        <p class="step-description">Faites un clic droit sur le dossier extrait dans le Disque Local C et sélectionnez "Propriétés" dans le menu contextuel, puis accédez à l'onglet "Partage" et cliquez sur le premier bouton "Partager"</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step2.png" alt="Créer un dossier sur le Disque C">
+                            <img src="src/assets/images/step2.png" alt="Accéder aux propriétés du dossier">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">3</div>
-                        <h3 class="step-title">Copier les fichiers extraits</h3>
-                        <p class="step-description">Copiez les fichiers extraits du ZIP dans le nouveau dossier que vous avez créé sur le Disque C</p>
+                        <h3 class="step-title">Sélectionner le compte utilisateur</h3>
+                        <p class="step-description">Dans le menu déroulant, sélectionnez votre compte utilisateur Windows actif, puis cliquez sur le bouton "Partager" en bas de la fenêtre</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step3.png" alt="Copier les fichiers extraits">
+                            <img src="src/assets/images/step3.png" alt="Sélectionner le compte utilisateur">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">4</div>
-                        <h3 class="step-title">Ouvrir les propriétés du dossier</h3>
-                        <p class="step-description">Faites un clic droit sur le dossier et sélectionnez "Propriétés" dans le menu contextuel</p>
+                        <h3 class="step-title">Désactiver la découverte du réseau</h3>
+                        <p class="step-description">Sélectionnez la première option dans la fenêtre pour désactiver la découverte du réseau et le partage des fichiers pour les réseaux publics</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step4.png" alt="Ouvrir les propriétés du dossier">
+                            <img src="src/assets/images/step4.png" alt="Désactiver la découverte du réseau">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">5</div>
-                        <h3 class="step-title">Accéder à l'onglet Partage</h3>
-                        <p class="step-description">Dans la fenêtre des propriétés, cliquez sur l'onglet "Partage" en haut</p>
+                        <h3 class="step-title">Copier le lien partagé</h3>
+                        <p class="step-description">Cliquez sur le bouton "Copier" pour copier le lien du fichier partagé</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step5.png" alt="Accéder à l'onglet Partage">
+                            <img src="src/assets/images/step5.png" alt="Copier le lien partagé">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">6</div>
-                        <h3 class="step-title">Cliquer sur Partager</h3>
-                        <p class="step-description">Cliquez sur le premier bouton "Partager" dans l'onglet de partage</p>
+                        <h3 class="step-title">Vérifier le lien partagé</h3>
+                        <p class="step-description">Si tout a été fait correctement, vous devriez voir le lien du dossier partagé comme indiqué sur l'image. Si c'est le cas, vous pouvez fermer cette fenêtre.</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step6.png" alt="Cliquer sur Partager">
+                            <img src="src/assets/images/step6.png" alt="Lien du dossier partagé">
                         </div>
                     </div>
-                    
                     <div class="swiper-slide">
                         <div class="step-number">7</div>
-                        <h3 class="step-title">Sélectionner l'utilisateur Windows</h3>
-                        <p class="step-description">Dans la liste déroulante, sélectionnez votre utilisateur Windows</p>
+                        <h3 class="step-title">Ouvrir les Options de Word</h3>
+                        <p class="step-description">Ouvrez Microsoft Word et accédez aux Options comme indiqué sur l'image</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step7.png" alt="Sélectionner l'utilisateur Windows">
+                            <img src="src/assets/images/step7.png" alt="Ouvrir les Options de Word">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">8</div>
-                        <h3 class="step-title">Cliquer sur le bouton Partager</h3>
-                        <p class="step-description">Cliquez sur le bouton "Partager" en bas de la fenêtre pour confirmer</p>
+                        <h3 class="step-title">Accéder au Centre de gestion de la confidentialité</h3>
+                        <p class="step-description">Une fois les options Word ouvertes, cliquez sur le dernier onglet en bas "Centre de gestion de la confidentialité", puis sur "Paramètres du centre de gestion de la confidentialité" comme indiqué par les chiffres 1 et 2 sur l'image</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step8.png" alt="Cliquer sur le bouton Partager">
+                            <img src="src/assets/images/step8.png" alt="Accéder au Centre de gestion de la confidentialité">
                         </div>
                     </div>
-                    
                     <div class="swiper-slide">
                         <div class="step-number">9</div>
-                        <h3 class="step-title">Copier le lien partagé</h3>
-                        <p class="step-description">Copiez le lien qui s'affiche en bas de la fenêtre de partage</p>
+                        <h3 class="step-title">Configurer les catalogues de confiance</h3>
+                        <p class="step-description">Une nouvelle fenêtre s'ouvre. Suivez simplement les numéros indiqués sur l'image. Au niveau du numéro 2, collez le lien que vous avez copié à l'étape 5. Il est crucial que le lien ait exactement le même format et la même disposition que sur l'image.</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step9.png" alt="Copier le lien partagé">
+                            <img src="src/assets/images/step9.png" alt="Configurer les catalogues de confiance">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">10</div>
-                        <h3 class="step-title">Ouvrir Microsoft Word</h3>
-                        <p class="step-description">Lancez Microsoft Word et ouvrez un nouveau document</p>
+                        <h3 class="step-title">Sélectionner le catalogue et afficher dans le menu</h3>
+                        <p class="step-description">Dans la liste des catalogues en bas, sélectionnez celui que vous venez d'ajouter et cochez la case "Afficher dans le Menu" comme indiqué sur l'image. Appuyez sur OK et fermez proprement toutes les fenêtres ! Il est crucial de fermer complètement Microsoft Word et de le rouvrir pour que nos configurations prennent effet !</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step10.png" alt="Ouvrir Microsoft Word">
+                            <img src="src/assets/images/step10.png" alt="Sélectionner le catalogue et afficher dans le menu">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">11</div>
-                        <h3 class="step-title">Accéder aux add-ins</h3>
-                        <p class="step-description">Cliquez sur l'onglet "Insertion" dans le ruban, puis sur "Mes add-ins"</p>
+                        <h3 class="step-title">Accéder aux compléments dans Word</h3>
+                        <p class="step-description">Dans Microsoft Word, allez dans l'onglet "Insertion", puis cliquez sur "Mes compléments" et sélectionnez "Afficher tout" pour accéder à la gestion des compléments.</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step11.png" alt="Accéder aux add-ins">
+                            <img src="src/assets/images/step12.png" alt="Accéder aux compléments dans Word">
                         </div>
                     </div>
-                    
                     <div class="swiper-slide">
                         <div class="step-number">12</div>
-                        <h3 class="step-title">Charger un add-in personnalisé</h3>
-                        <p class="step-description">Sélectionnez "Charger un add-in personnalisé" ou "Gérer mes add-ins" puis "Charger un add-in"</p>
+                        <h3 class="step-title">Sélectionner l'add-in dans le dossier partagé</h3>
+                        <p class="step-description">Dans la fenêtre des compléments, naviguez vers l'onglet "Dossier partagé". Vous y trouverez l'add-in WordMagician. Cliquez sur l'add-in, puis sur le bouton "Ajouter" en bas de la fenêtre pour l'installer.</p>
                         <div class="step-image">
-                            <img src="src/assets/images/step12.png" alt="Charger un add-in personnalisé">
+                            <img src="src/assets/images/step13.png" alt="Sélectionner l'add-in dans le dossier partagé">
                         </div>
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="step-number">13</div>
-                        <h3 class="step-title">Sélectionner le fichier manifest</h3>
-                        <p class="step-description">Naviguez vers le dossier partagé à l'aide du lien copié et sélectionnez le fichier manifest.xml</p>
-                        <div class="step-image">
-                            <img src="src/assets/images/step13.png" alt="Sélectionner le fichier manifest">
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                        <div class="step-number">14</div>
                         <h3 class="step-title">Utiliser l'add-in WordMagician</h3>
                         <p class="step-description">L'add-in WordMagician apparaît dans le ruban. Cliquez sur son icône pour commencer à l'utiliser</p>
                         <div class="step-image">
@@ -277,44 +266,92 @@
     </section>
 
     <!-- Guide d'utilisation -->
-    <section id="usage" class="section">
+    <section id="usage" class="section usage-section">
         <div class="container">
-            <h2>Guide d'utilisation</h2>
+            <div class="usage-header">
+                <h2>Guide d'utilisation</h2>
+                <p>Découvrez comment utiliser efficacement WordMagician dans Microsoft Word</p>
+            </div>
             
-            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
-                <div>
+            <div class="usage-grid">
+                <div class="usage-card interface-card">
+                    <div class="usage-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
                     <h3>Interface principale</h3>
-                    <h4>Champ "Personnage"</h4>
-                    <p>C'est le ton ou le style que l'IA va adopter (professeur, rédacteur créatif, etc.)</p>
-                    <p>Vous pouvez sélectionner un personnage prédéfini ou créer les vôtres</p>
-                    
-                    <h4>Champ "Instruction"</h4>
-                    <p>C'est la consigne précise que vous donnez à l'IA</p>
-                    <p>Exemples : "Rédige une introduction sur...", "Explique ce concept..."</p>
-                    
-                    <h4>Langue de réponse</h4>
-                    <p>Sélectionnez la langue dans laquelle l'IA doit vous répondre</p>
+                    <div class="usage-content">
+                        <div class="usage-item">
+                            <h4>Champ "Personnage"</h4>
+                            <p>C'est le ton ou le style que l'IA va adopter (professeur, rédacteur créatif, etc.)</p>
+                            <p>Vous pouvez sélectionner un personnage prédéfini ou créer les vôtres</p>
+                        </div>
+                        
+                        <div class="usage-item">
+                            <h4>Champ "Instruction"</h4>
+                            <p>C'est la consigne précise que vous donnez à l'IA</p>
+                            <p>Exemples : "Rédige une introduction sur...", "Explique ce concept..."</p>
+                        </div>
+                        
+                        <div class="usage-item">
+                            <h4>Langue de réponse</h4>
+                            <p>Sélectionnez la langue dans laquelle l'IA doit vous répondre</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div>
+                <div class="usage-card actions-card">
+                    <div class="usage-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
                     <h3>Boutons d'action</h3>
-                    <ul>
-                        <li><strong>Traduire :</strong> traduit le texte sélectionné dans la langue choisie</li>
-                        <li><strong>Résumer :</strong> crée un résumé concis du texte sélectionné</li>
-                        <li><strong>Améliorer :</strong> améliore la clarté et le style du texte</li>
-                        <li><strong>Grammaire :</strong> corrige les erreurs grammaticales</li>
-                        <li><strong>Académique :</strong> transforme le texte en style académique</li>
-                        <li><strong>Paramètres :</strong> accède aux paramètres de l'add-in</li>
-                    </ul>
-                    
+                    <div class="usage-content">
+                        <ul class="action-list">
+                            <li>
+                                <span class="action-icon"><i class="fas fa-language"></i></span>
+                                <span class="action-description"><strong>Traduire :</strong> traduit le texte sélectionné dans la langue choisie</span>
+                            </li>
+                            <li>
+                                <span class="action-icon"><i class="fas fa-compress-alt"></i></span>
+                                <span class="action-description"><strong>Résumer :</strong> crée un résumé concis du texte sélectionné</span>
+                            </li>
+                            <li>
+                                <span class="action-icon"><i class="fas fa-feather-alt"></i></span>
+                                <span class="action-description"><strong>Améliorer :</strong> améliore la clarté et le style du texte</span>
+                            </li>
+                            <li>
+                                <span class="action-icon"><i class="fas fa-spell-check"></i></span>
+                                <span class="action-description"><strong>Grammaire :</strong> corrige les erreurs grammaticales</span>
+                            </li>
+                            <li>
+                                <span class="action-icon"><i class="fas fa-graduation-cap"></i></span>
+                                <span class="action-description"><strong>Académique :</strong> transforme le texte en style académique</span>
+                            </li>
+                            <li>
+                                <span class="action-icon"><i class="fas fa-cog"></i></span>
+                                <span class="action-description"><strong>Paramètres :</strong> accède aux paramètres de l'add-in</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="usage-card config-card">
+                    <div class="usage-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
                     <h3>Configuration API</h3>
-                    <p>Pour utiliser l'add-in, configurez au moins une API :</p>
-                    <ol>
-                        <li>Cliquez sur le bouton "Paramètres"</li>
-                        <li>Sélectionnez l'API souhaitée (Gemini, Together, OpenRouter)</li>
-                        <li>Entrez votre clé API et sélectionnez le modèle</li>
-                        <li>Cliquez sur "Confirmer" pour sauvegarder</li>
-                    </ol>
+                    <div class="usage-content">
+                        <p>Pour utiliser l'add-in, configurez au moins une API :</p>
+                        <ol class="config-steps">
+                            <li>Cliquez sur le bouton "Paramètres"</li>
+                            <li>Sélectionnez l'API souhaitée (Gemini, Together, OpenRouter)</li>
+                            <li>Entrez votre clé API et sélectionnez le modèle</li>
+                            <li>Cliquez sur "Confirmer" pour sauvegarder</li>
+                        </ol>
+                        <div class="config-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Conseil : Les clés API sont stockées localement sur votre ordinateur pour plus de sécurité</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

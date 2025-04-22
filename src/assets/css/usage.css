@@ -1,0 +1,275 @@
+.usage-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.usage-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.usage-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--light-text);
+}
+
+.usage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.usage-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.usage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.usage-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 15px;
+}
+
+.usage-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.usage-card h3 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.usage-content {
+  padding: 0 25px 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.usage-item {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.usage-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.usage-item h4 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.usage-item p {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.usage-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Styles pour la carte d'actions */
+.action-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.action-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #f1f8ff;
+  border-radius: 8px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.action-icon i {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.action-description {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--light-text);
+}
+
+.action-description strong {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Styles pour la carte de configuration */
+.config-steps {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.config-steps li {
+  padding: 8px 0;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+.config-tip {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.config-tip i {
+  color: #ffc107;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.config-tip p {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .usage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .config-card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-section {
+    padding: 60px 0;
+  }
+  
+  .usage-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .config-card {
+    grid-column: span 1;
+  }
+  
+  .usage-icon {
+    width: 50px;
+    height: 50px;
+    margin: 25px auto 15px;
+  }
+  
+  .usage-icon i {
+    font-size: 20px;
+  }
+  
+  .usage-card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .usage-section {
+    padding: 40px 0;
+  }
+  
+  .usage-header {
+    margin-bottom: 30px;
+  }
+  
+  .usage-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .usage-header p {
+    font-size: 0.9rem;
+  }
+  
+  .usage-card {
+    border-radius: 10px;
+  }
+  
+  .usage-content {
+    padding: 0 20px 20px;
+  }
+  
+  .usage-icon {
+    width: 45px;
+    height: 45px;
+    margin: 20px auto 10px;
+  }
+  
+  .usage-icon i {
+    font-size: 18px;
+  }
+  
+  .usage-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .usage-item h4 {
+    font-size: 1rem;
+  }
+  
+  .usage-item p,
+  .action-description,
+  .config-steps li {
+    font-size: 0.9rem;
+  }
+} 

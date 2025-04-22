@@ -235,4 +235,24 @@
     font-size: 8px;
     margin: 0 2px !important;
   }
+  
+  .swiper-slide {
+    padding: 20px 15px;
+  }
+  
+  .step-title {
+    font-size: 1.1rem;
+  }
+  
+  .step-description {
+    font-size: 0.9rem;
+  }
+  
+  .installation-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .installation-header p {
+    font-size: 0.9rem;
+  }
 } 

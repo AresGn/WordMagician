@@ -19,6 +19,8 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -165,6 +167,22 @@ a:hover {
   grid-gap: 20px;
 }
 
+.presentation-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.download-container {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.download-button {
+  margin: 30px 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -183,6 +201,20 @@ img {
   .section {
     padding: 40px 0;
   }
+
+  .grid {
+    grid-template-columns: 1fr !important; /* Forcer une seule colonne sur mobile */
+    gap: 20px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -194,7 +226,26 @@ img {
     font-size: 1.5rem;
   }
   
+  h3 {
+    font-size: 1.25rem;
+  }
+  
   .section {
     padding: 30px 0;
+  }
+  
+  p {
+    font-size: 0.95rem;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .download-container small {
+    font-size: 0.8rem;
+    display: block;
+    padding: 0 15px;
+    line-height: 1.4;
   }
 } 
