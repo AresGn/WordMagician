@@ -25,15 +25,52 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .section {
   padding: 60px 0;
   border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .section:last-child {
   border-bottom: none;
+}
+
+.section h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.section p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Classes utilitaires pour l'alignement */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,6 +135,17 @@ a:hover {
 .btn-secondary:hover {
   background-color: #f1f3f4;
   color: #3367d6;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .flex {

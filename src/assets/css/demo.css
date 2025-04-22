@@ -1,0 +1,148 @@
+.demo-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.demo-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.demo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.demo-card h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.demo-card p {
+  color: var(--light-text);
+  margin: 15px 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.other-apis-title {
+  margin: 40px 0 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.apis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.api-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.api-card:hover {
+  transform: translateY(-3px);
+}
+
+.api-card h4 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.api-card p {
+  color: var(--light-text);
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.api-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .apis-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .demo-section {
+    padding: 60px 0;
+  }
+  
+  .apis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .demo-card {
+    padding: 20px;
+  }
+  
+  .api-card {
+    padding: 20px;
+  }
+} 

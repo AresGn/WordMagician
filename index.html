@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/assets/css/faq.css">
     <link rel="stylesheet" href="src/assets/css/footer.css">
     <link rel="stylesheet" href="src/assets/css/notifications.css">
+    <link rel="stylesheet" href="src/assets/css/demo.css">
     
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
@@ -33,6 +34,7 @@
             <div class="header-buttons">
                 <a href="#download" class="btn">Télécharger maintenant</a>
                 <a href="#features" class="btn btn-secondary">Découvrir les fonctionnalités</a>
+                <a href="#demo" class="btn btn-outline">Voir les démos</a>
             </div>
         </div>
     </header>
@@ -318,6 +320,66 @@
         </div>
     </section>
 
+    <!-- Section Démo -->
+    <section id="demo" class="section demo-section">
+        <div class="container">
+            <h2>Démonstrations</h2>
+            <p>Découvrez comment utiliser WordMagician et obtenir les clés API nécessaires à travers nos vidéos démonstratives</p>
+            
+            <div class="demo-grid">
+                <!-- Démo d'utilisation de WordMagician -->
+                <div class="demo-card">
+                    <h3>Démonstration de WordMagician dans Word</h3>
+                    <div class="video-container">
+                        <!-- Remplacement de l'iframe par une balise vidéo locale -->
+                        <video controls>
+                            <source src="src/assets/videos/wordmagician-demo.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                        </video>
+                    </div>
+                    <p>Voyez comment utiliser efficacement WordMagician pour améliorer votre productivité dans Microsoft Word</p>
+                </div>
+                
+                <!-- Tutoriel pour obtenir une clé API Together.xyz -->
+                <div class="demo-card">
+                    <h3>Obtenir une clé API sur Together.xyz</h3>
+                    <div class="video-container">
+                        <!-- Remplacement de l'iframe par une balise vidéo locale -->
+                        <video controls>
+                            <source src="src/assets/videos/together-api-tutorial.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                        </video>
+                    </div>
+                    <p>Suivez ce guide pas à pas pour créer votre compte et obtenir gratuitement une clé API sur Together.xyz</p>
+                    <a href="https://api.together.xyz" class="btn btn-secondary" target="_blank">Visiter Together.xyz</a>
+                </div>
+            </div>
+            
+            <h3 class="other-apis-title">Autres API prises en charge</h3>
+            <div class="apis-grid">
+                <!-- Gemini API -->
+                <div class="api-card">
+                    <h4>Google Gemini</h4>
+                    <p>L'API Gemini de Google offre un accès gratuit aux modèles d'IA avancés de Google</p>
+                    <div class="api-links">
+                        <a href="https://aistudio.google.com/" class="btn btn-small" target="_blank">Obtenir une clé</a>
+                        <a href="https://youtu.be/AHrokfNGHfM" class="btn btn-small btn-secondary" target="_blank">Voir le tutoriel</a>
+                    </div>
+                </div>
+                
+                <!-- OpenRouter API -->
+                <div class="api-card">
+                    <h4>OpenRouter</h4>
+                    <p>OpenRouter permet d'accéder à une variété de modèles d'IA à travers une seule API</p>
+                    <div class="api-links">
+                        <a href="https://openrouter.ai/" class="btn btn-small" target="_blank">Obtenir une clé</a>
+                        <a href="https://youtu.be/-X9DVzzxpAA" class="btn btn-small btn-secondary" target="_blank">Voir le tutoriel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section id="faq" class="section faq-section">
         <div class="container">
@@ -330,7 +392,7 @@
                 <div class="faq-item">
                     <div class="faq-question">L'add-in est-il gratuit ?</div>
                     <div class="faq-answer">
-                        <p>L'add-in lui-même est gratuit, mais vous devez avoir vos propres clés API pour les services d'IA (Gemini, Together, OpenRouter).</p>
+                        <p>L'add-in lui-même est gratuit, mais vous devez avoir vos propres clés API pour les services d'IA (Gemini, Together, OpenRouter). Ces clés API sont également gratuites à obtenir.</p>
                     </div>
                 </div>
                 
@@ -393,6 +455,7 @@
                         <li><a href="#download">Téléchargement</a></li>
                         <li><a href="#features">Fonctionnalités</a></li>
                         <li><a href="#installation">Installation</a></li>
+                        <li><a href="#demo">Démonstrations</a></li>
                     </ul>
                 </div>
                 
